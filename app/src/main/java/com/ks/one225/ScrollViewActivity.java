@@ -77,25 +77,7 @@ public class ScrollViewActivity extends AppCompatActivity {
         startActivity(new Intent(ScrollViewActivity.this, AlarmManagerExample.class));
     }
     public void OpenRa6(View view) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(ScrollViewActivity.this,"M_CH_ID")
-                .setSmallIcon(R.drawable.ic_launcher_foreground) //set icon for notification
-                .setContentTitle("Notifications Example") //set title of notification
-                .setContentText("This is a notification message")//this is notification message
-                .setAutoCancel(true) // makes auto cancel of notification7696
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);// ity of notification
 
-
-        Intent notificationIntent = new Intent(ScrollViewActivity.this, NotificationExampleActivity.class);
-        notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        //notification message will get at NotificationView
-        notificationIntent.putExtra("message", "This is a notification message");
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(ScrollViewActivity.this, 0, notificationIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
-        builder.setContentIntent(pendingIntent);
-
-        // Add as notification
-        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(0, builder.build());
+        startActivity(new Intent(ScrollViewActivity.this,NotificationExampleActivity.class));
     }
 }
