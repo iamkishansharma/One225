@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmManagerExample"
+    android:orientation="vertical"
+    android:background="#6A148F">
+
+    <TextView
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="TIME GOES HERE"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_pi"/>
+    <Button
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#F33232"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_pi"
+        android:text="Start"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restart_pi"
+            android:text="Restart"/>
+        <Button
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_pi"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

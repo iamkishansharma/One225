@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Item 1"
+        android:id="@+id/it1"
+        app:showAsAction="never"/>
+    <item
+        android:title="Item 2"
+        android:id="@+id/it2"
+        app:showAsAction="never"/>
+    <item
+        android:title="Item 3"
+        android:id="@+id/it3"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:title="Item A"
+                android:id="@+id/iit1"
+                android:icon="@drawable/ic_launcher_foreground"/>
+            <item
+                android:title="Item B"
+                android:id="@+id/iit2"
+                android:icon="@drawable/ic_launcher_foreground"/>
+            <item
+                android:title="Item C"
+                android:id="@+id/iit3"
+                android:icon="@drawable/ic_launcher_background"/>
+        </menu>
+    </item>
+</menu>

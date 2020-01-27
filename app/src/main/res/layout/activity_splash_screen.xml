@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <TextView
+        android:id="@+id/sst"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="45sp"
+        android:text="Splash Screen Ex"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerInParent="true"
+        android:id="@+id/imgs"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Kishan Kumar Sharma"
+        android:id="@+id/texts"
+        android:layout_below="@id/imgs"
+        android:textColor="#000000"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="0.01"
+        android:shadowColor="#fff"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ks.one225">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".NotificationExampleActivity"></activity>
+        <activity android:name=".AlarmManagerExample" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".ToolBarActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".ScrollViewActivity2" />
+
+        <receiver android:name=".AlarmManagerBroadcast" />
+    </application>
+
+</manifest>
