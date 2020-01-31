@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".NotificationExampleActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/bg">
 
     <Button
         android:layout_width="match_parent"
@@ -14,7 +15,8 @@
         android:onClick="showNotification"
         android:text="Show Notification"
         android:background="@drawable/bg2"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:foreground="?attr/selectableItemBackground"/>
 
     <ImageView
         android:layout_width="match_parent"

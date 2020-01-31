@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="256dp">
+    <TextView
+        android:id="@+id/tvb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big NOTIFICATION"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <ImageView
+
+        android:layout_below="@id/tvb"
+        android:id="@+id/ivb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"/>
+
+</RelativeLayout>

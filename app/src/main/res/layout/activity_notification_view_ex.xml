@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotificationViewEx"
-    android:background="@drawable/bg"
+    android:background="@drawable/btn"
     android:gravity="center">
     <TextView
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TEXT VIEW"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:textSize="30sp"
         android:id="@+id/tv"/>
-
-
 </LinearLayout>

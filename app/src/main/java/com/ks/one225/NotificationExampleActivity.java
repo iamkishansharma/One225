@@ -16,6 +16,7 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RemoteViews;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -49,21 +50,29 @@ public class NotificationExampleActivity extends AppCompatActivity {
 
         Intent i = new Intent(NotificationExampleActivity.this, NotificationViewEx.class);
         PendingIntent pi = PendingIntent.getActivity(NotificationExampleActivity.this, 1, i, PendingIntent.FLAG_ONE_SHOT);
+        RemoteViews notificationLayout = new RemoteViews(getPackageName(), R.layout.small_notification);
+        RemoteViews notificationLayoutExpanded = new RemoteViews(getPackageName(), R.layout.big_notification);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channel_ID);
         builder.setSmallIcon(R.drawable.ic_announcement)
                 .setContentTitle("My Notification")
                 .setContentText("This is my new Notification")
-                .setLights(Color.RED, 3000, 3000)
-                .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
-                .setContentIntent(pi);
+                .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
+                .setCustomContentView(notificationLayout)
+                .setCustomBigContentView(notificationLayoutExpanded)
+                .build();
+
+
+               builder .setContentIntent(pi);
+
+
+
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
             //RemoteInput ri = new RemoteInput.Builder(myKey).setLabel("Replying....").build();
             androidx.core.app.RemoteInput ri = new androidx.core.app.RemoteInput.Builder(myKey).setLabel("Replying.....").build();
             NotificationCompat.Action action = new NotificationCompat.Action.Builder(R.drawable.ic_check_black_24dp, "Reply!", pi)
                     .addRemoteInput(ri).build();
-
 
             builder.addAction(action);
         }

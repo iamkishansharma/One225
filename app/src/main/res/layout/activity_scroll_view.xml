@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScrollViewActivity">
+    tools:context=".ScrollViewActivity"
+    android:background="@drawable/btn">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,50 +19,92 @@
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="#fff"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
-            android:id="@+id/stImg"/>
+            android:id="@+id/stImg"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert with Rating Bar"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:onClick="OpenRa1"/>
+            android:onClick="OpenRa1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horizontal ScrollView Activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
             android:onClick="OpenRa2"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom ToolBar"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:onClick="OpenRa3"/>
+            android:onClick="OpenRa3"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProgressBar Activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
-            android:onClick="OpenRa4"/>
+            android:onClick="OpenRa4"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Toast Activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
             android:onClick="OpenRa5"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AlarmManager Example Activity"/>
         <ImageView
             android:onClick="OpenRa6"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
-            />
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification Example Activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            />
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
     </LinearLayout>
-
-
-
 </ScrollView>
