@@ -39,9 +39,7 @@ public class ScrollViewActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
-
     }
-
 
     public void OpenRa1(View view) {
         Intent in = new Intent(ScrollViewActivity.this, ScrollViewActivity2.class);
@@ -55,7 +53,6 @@ public class ScrollViewActivity extends AppCompatActivity {
     public void OpenRa3(View view) {
         Intent in2 = new Intent(ScrollViewActivity.this, ProgressBarActivity.class);
         startActivity(in2);
-
     }
 
     public void OpenRa4(View view) {
@@ -70,7 +67,6 @@ public class ScrollViewActivity extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
         toast.show();
-
     }
 
     public void OpenRa5(View view) {

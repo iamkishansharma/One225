@@ -25,7 +25,6 @@ public class NotificationExampleActivity extends AppCompatActivity {
 
     ImageView imageView;
     NotificationManager notificationManager;
-    Button button;
 
     public static final String channel_ID = "My Channel ID";
     public static final int notification_ID = 10;
@@ -62,10 +61,7 @@ public class NotificationExampleActivity extends AppCompatActivity {
                 .setCustomBigContentView(notificationLayoutExpanded)
                 .build();
 
-
                builder .setContentIntent(pi);
-
-
 
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){

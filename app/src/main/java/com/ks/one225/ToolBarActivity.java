@@ -1,7 +1,6 @@
 package com.ks.one225;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ActionMenuView;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
