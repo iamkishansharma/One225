@@ -18,6 +18,7 @@ public class NotificationViewEx extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_view_ex);
+
         tv= findViewById(R.id.tv);
 
         Bundle b1 = RemoteInput.getResultsFromIntent(getIntent());

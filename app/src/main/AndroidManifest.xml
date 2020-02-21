@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".NotificationViewEx"></activity>
+        <activity android:name=".FragmentExample"></activity>
+        <activity android:name=".NotificationViewEx" />
         <activity android:name=".NotificationExampleActivity" />
         <activity android:name=".AlarmManagerExample" />
         <activity android:name=".ProgressBarActivity" />

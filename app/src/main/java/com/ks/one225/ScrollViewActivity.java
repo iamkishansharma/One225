@@ -76,4 +76,7 @@ public class ScrollViewActivity extends AppCompatActivity {
 
         startActivity(new Intent(ScrollViewActivity.this,NotificationExampleActivity.class));
     }
+    public void OpenRa7(View view) {
+        startActivity(new Intent(ScrollViewActivity.this,FragmentExample.class));
+    }
 }

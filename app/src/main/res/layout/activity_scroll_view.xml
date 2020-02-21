@@ -101,10 +101,16 @@
             android:layout_height="wrap_content"
             android:text="Notification Example Activity"/>
         <ImageView
+            android:onClick="OpenRa7"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment Example Activity"/>
     </LinearLayout>
 </ScrollView>
