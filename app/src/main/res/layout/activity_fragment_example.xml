@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  tools:context=".FragmentExample"
+    tools:context="com.ks.one225.fragments.FragmentExample"
+    android:id="@+id/frag1BG"
     android:orientation="vertical">
    <!-- <TextView
         android:layout_width="match_parent"
@@ -17,16 +18,27 @@
 
 
     <fragment
+        android:layout_margin="10dp"
         android:tag="fragg1"
-        android:id="@+id/fragment"
-        android:name="com.ks.one225.Fragment1"
+        android:id="@+id/fragment1"
+        android:name="com.ks.one225.fragments.Fragment1"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <fragment
+        android:layout_weight="2"
         android:tag="fragg2"
+        android:layout_margin="10dp"
         android:id="@+id/fragment2"
-        android:name="com.ks.one225.Fragment2"
+        android:name="com.ks.one225.fragments.Fragment2"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mainBtn"/>
 </LinearLayout>

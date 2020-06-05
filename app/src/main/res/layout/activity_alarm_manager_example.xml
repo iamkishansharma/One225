@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlarmManagerExample"
+    tools:context=".alarm.AlarmManagerExample"
     android:orientation="vertical"
-    android:background="#6A148F">
+    android:background="#03A9F4">
 
     <TextView
         android:background="@drawable/bg"
@@ -20,7 +20,8 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_pi"/>
+        android:id="@+id/edt_pi"
+        android:inputType="numberDecimal"/>
     <Button
         android:foreground="?android:attr/selectableItemBackgroundBorderless"
         android:layout_marginRight="30dp"

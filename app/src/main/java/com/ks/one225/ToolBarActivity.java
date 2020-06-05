@@ -18,17 +18,9 @@ public class ToolBarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tool_bar);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Kishan Kr Sharma");
-        toolbar.setLogo(R.drawable.ic_launcher_foreground);
-        toolbar.setBackground(getDrawable(R.drawable.bg));
-        toolbar.setClickable(true);
+//        toolbar.setTitle("Kishan Kr Sharma");
+//        toolbar.setBackground(getDrawable(R.drawable.bg));
         setSupportActionBar(toolbar);
-        toolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ToolBarActivity.this, "Uppar Click Huwa", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     @Override

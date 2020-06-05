@@ -2,30 +2,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="Item 1"
+        android:title="Home"
+        android:icon="@drawable/home"
         android:id="@+id/it1"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
     <item
-        android:title="Item 2"
+        android:title="People"
         android:id="@+id/it2"
-        app:showAsAction="never"/>
+        app:showAsAction="always"
+        android:icon="@drawable/people"/>
     <item
-        android:title="Item 3"
+        android:title="More"
         android:id="@+id/it3"
-        app:showAsAction="never">
+        app:showAsAction="always"
+        android:icon="@drawable/more">
         <menu>
             <item
                 android:title="Item A"
                 android:id="@+id/iit1"
-                android:icon="@drawable/ic_launcher_foreground"/>
+                android:icon="@drawable/people"/>
             <item
                 android:title="Item B"
                 android:id="@+id/iit2"
-                android:icon="@drawable/ic_launcher_foreground"/>
+                android:icon="@drawable/ic_check_black_24dp"/>
             <item
                 android:title="Item C"
                 android:id="@+id/iit3"
-                android:icon="@drawable/ic_launcher_background"/>
+                android:icon="@drawable/home"/>
         </menu>
     </item>
 </menu>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationExampleActivity"
+    tools:context="com.ks.one225.notification.NotificationExampleActivity"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/bg">
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="showNotification"
-        android:text="Show Notification"
+        android:text="@string/show_notification"
         android:background="@drawable/bg2"
         android:layout_margin="20dp"
         android:foreground="?attr/selectableItemBackground"/>
@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/iv"
-        android:src="@drawable/ic_launcher_foreground"/>
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/show_notification" />
 
 
 </LinearLayout>

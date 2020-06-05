@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">One225</string>
+    <string name="show_notification">Show Notification</string>
+    <string name="submit">SUBMIT</string>
+    <string name="scroll_view">Scroll View</string>
+    <string name="lert_with_rating_bar">1.Alert with Rating Bar</string>
+    <string name="horizontal_scrollview_activity">1.Horizontal ScrollView Activity</string>
+    <string name="tech">.tech</string>
+    <string name="_1_custom_toolbar">1.Custom ToolBar</string>
+    <string name="_1_progressbar_activity">1.ProgressBar Activity</string>
+    <string name="_1_custom_toast_activity">1.Custom Toast Activity</string>
+    <string name="_2_alarmmanager_example_activity">2.AlarmManager Example Activity</string>
+    <string name="_2_notification_example_activity">2.Notification Example Activity</string>
+    <string name="_3_fragment_example_activity">3.Fragment Example Activity</string>
+    <string name="_3_date_picker">3.Date Picker</string>
+    <string name="_3_time_picker">3.Time Picker</string>
+    <string name="_1_alert_with_rating_bar">1.Alert with rating Bar</string>
+    <string name="website">www.heycode.tech</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
 </resources>

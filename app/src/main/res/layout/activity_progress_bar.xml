@@ -15,7 +15,6 @@
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:maxWidth="20dp"/>
 
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -25,16 +24,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prog_start"
-            android:text="Start"/>
+            android:text="Start 1"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prog_reset"
-            android:text="Reset"/>
+            android:text="Start 2"/>
     </LinearLayout>
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/progressbar2"/>
+        android:id="@+id/progressbar2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 </LinearLayout>

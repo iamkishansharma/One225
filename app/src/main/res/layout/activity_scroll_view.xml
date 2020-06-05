@@ -13,12 +13,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scroll View"
-            android:layout_gravity="center_horizontal"
+            android:text="@string/scroll_view"
+            android:gravity="center_horizontal"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:background="@drawable/btn"
             android:textColor="#fff"/>
         <ImageView
             android:layout_width="match_parent"
@@ -26,70 +27,71 @@
             android:src="@drawable/ic_launcher_background"
             android:id="@+id/stImg"
             android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="ratingBarFun"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alert with Rating Bar"/>
+            android:text="@string/_1_alert_with_rating_bar"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:onClick="OpenRa1"
+            android:onClick="horizontalScrollViewFun"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackground"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Horizontal ScrollView Activity"/>
+            android:text="@string/horizontal_scrollview_activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
-            android:onClick="OpenRa2"/>
+            android:onClick="customToolBarFun"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Custom ToolBar"/>
+            android:text="@string/_1_custom_toolbar"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:onClick="OpenRa3"
+            android:onClick="progressBarFun"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackground"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ProgressBar Activity"/>
+            android:text="@string/_1_progressbar_activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
-            android:onClick="OpenRa4"
+            android:onClick="customToastFun"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackground"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Custom Toast Activity"/>
+            android:text="@string/_1_custom_toast_activity"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:onClick="OpenRa5"/>
+            android:onClick="alarmExampleFun"/>
         <TextView
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AlarmManager Example Activity"/>
+            android:text="@string/_2_alarmmanager_example_activity"/>
         <ImageView
-            android:onClick="OpenRa6"
+            android:onClick="notificationExampleFun"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_background"
@@ -99,9 +101,9 @@
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notification Example Activity"/>
+            android:text="@string/_2_notification_example_activity"/>
         <ImageView
-            android:onClick="OpenRa7"
+            android:onClick="fragmentExampleFun"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/ic_launcher_foreground"
@@ -111,6 +113,32 @@
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fragment Example Activity"/>
+            android:text="@string/_3_fragment_example_activity"/>
+
+        <ImageView
+            android:onClick="datePickerFun"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_date_picker"/>
+
+        <ImageView
+            android:onClick="TimePickerFun"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_time_picker"/>
     </LinearLayout>
 </ScrollView>

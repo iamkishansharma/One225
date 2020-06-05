@@ -1,6 +1,4 @@
-package com.ks.one225;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.ks.one225.alarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -10,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.ks.one225.R;
 
 public class AlarmManagerExample extends AppCompatActivity {
 
@@ -30,16 +32,20 @@ public class AlarmManagerExample extends AppCompatActivity {
         cancel = findViewById(R.id.cancel_pi);
         edt_pi = findViewById(R.id.edt_pi);
 
-        intent = new Intent(AlarmManagerExample.this, AlarmManagerBroadcast.class);
+        intent = new Intent(AlarmManagerExample.this, com.ks.one225.alarm.AlarmManagerBroadcast.class);
         pendingIntent = PendingIntent.getBroadcast(AlarmManagerExample.this, 234, intent, 0);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                i = Integer.parseInt(edt_pi.getText().toString());
-                alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-                alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(i*1000), pendingIntent);
-                Toast.makeText(AlarmManagerExample.this, "Alarm set in "+i+" seconds", Toast.LENGTH_LONG).show();
+                if(edt_pi.length()!=0){
+                    i = Integer.parseInt(edt_pi.getText().toString());
+                    alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+                    alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(i*1000), pendingIntent);
+                    Toast.makeText(AlarmManagerExample.this, "Alarm set in "+i+" seconds", Toast.LENGTH_LONG).show();
+                }else{
+                    edt_pi.setError("Error Input!");
+                }
             }
         });
         restart.setOnClickListener(new View.OnClickListener() {

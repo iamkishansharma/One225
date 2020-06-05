@@ -1,7 +1,7 @@
-package com.ks.one225;
+package com.ks.one225.fragments;
 
-import android.graphics.Color;
 import android.os.Bundle;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.ks.one225.R;
+
 public class Fragment1 extends Fragment {
-    Button btnGreen;
-    @Nullable
-    @Override
+    public Fragment1(){
+
+    }
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.frag1, container,false);
 
-        btnGreen = v.findViewById(R.id.frag1BtnGreen);
+        Button btnGreen = v.findViewById(R.id.frag1BtnGreen);
         btnGreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

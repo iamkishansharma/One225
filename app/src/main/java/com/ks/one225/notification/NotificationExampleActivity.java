@@ -1,4 +1,4 @@
-package com.ks.one225;
+package com.ks.one225.notification;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RemoteViews;
 import android.widget.TextView;
+
+import com.ks.one225.R;
 
 import org.w3c.dom.Text;
 

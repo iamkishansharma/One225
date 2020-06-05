@@ -2,31 +2,52 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ks.one225">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:appCategory="productivity"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".FragmentExample"></activity>
-        <activity android:name=".NotificationViewEx" />
-        <activity android:name=".NotificationExampleActivity" />
-        <activity android:name=".AlarmManagerExample" />
-        <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".ToolBarActivity" />
-        <activity android:name=".RatingActivity" />
+        <receiver android:name=".MyAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_app_widget_info" />
+        </receiver>
+
+        <activity android:name=".MyAppWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".ScrollViewActivity" />
-        <activity android:name=".ScrollViewActivity2" />
+        </activity> <!-- Everything goes here -->
+        <activity android:name=".scrollview.ScrollViewActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".scrollview.HorizontalScrollView" />
+        <activity android:name=".ToolBarActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".alarm.AlarmManagerExample" />
 
-        <receiver android:name=".AlarmManagerBroadcast" />
+        <receiver android:name=".alarm.AlarmManagerBroadcast" />
+
+        <activity android:name=".notification.NotificationExampleActivity" />
+        <activity android:name=".notification.NotificationViewEx" />
+        <activity android:name=".fragments.FragmentExample" />
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".TimePickerActivity" />
     </application>
 
 </manifest>

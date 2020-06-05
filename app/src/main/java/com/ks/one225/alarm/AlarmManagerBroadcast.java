@@ -1,10 +1,12 @@
-package com.ks.one225;
+package com.ks.one225.alarm;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.widget.Toast;
+
+import com.ks.one225.R;
 
 public class AlarmManagerBroadcast extends BroadcastReceiver {
 

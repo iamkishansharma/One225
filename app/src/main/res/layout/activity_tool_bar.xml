@@ -10,8 +10,28 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:maxHeight="?attr/actionBarSize"
-        android:background="@drawable/bg"
-        app:theme="@style/Widget.AppCompat.Toolbar" >
+        android:background="@drawable/btn"
+        app:theme="@style/Widget.AppCompat.Toolbar"
+        android:elevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".tech"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
 

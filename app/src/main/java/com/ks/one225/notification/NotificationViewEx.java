@@ -1,14 +1,11 @@
-package com.ks.one225;
+package com.ks.one225.notification;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.RemoteInput;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
+import com.ks.one225.R;
 
 public class NotificationViewEx extends AppCompatActivity {
 

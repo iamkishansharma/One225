@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="500dp"
     tools:context=".RatingActivity"
     android:orientation="vertical"
+    android:id="@+id/viewRating"
     android:background="@drawable/bg">
 
     <RatingBar
@@ -14,13 +15,5 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:numStars="5"/>
-    <Button
-        android:id="@+id/rateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SUBMIT"
-        android:background="@drawable/bg2"
-        android:layout_below="@id/ratingBar"
-        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
