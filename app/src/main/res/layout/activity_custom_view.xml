@@ -4,16 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".unitThree.DatePickerActivity"
-    android:orientation="vertical">
-    <DatePicker
+    android:orientation="vertical"
+    tools:context=".unitFour.CustomViewActivity">
+
+    <com.ks.one225.unitFour.MyViews
+        android:layout_width="match_parent"
+        android:text="@string/appwidget_text"
+        android:layout_height="300dp"/>
+
+    <com.ks.one225.unitFour.KishanText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pickDate" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Date"
-        android:onClick="getDate"/>
+        app:KishanSetColor="@color/colorPrimaryDark"
+        app:KishanAddText="@string/app_name"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
 
 </LinearLayout>

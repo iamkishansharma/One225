@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General Category">
+        <SwitchPreference
+            android:icon="@drawable/home"
+            android:title="Dark Mode"
+            android:id="@+id/dark_mode"/>
+        <RingtonePreference
+            android:title="Select Color"
+            android:icon="@drawable/people"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Un Category Mode">
+        <ListPreference
+            android:icon="@drawable/home"
+            android:title="Check Me"
+            android:defaultValue="@string/unit3"
+            android:dialogTitle="Choose Color"
+            android:entries="@array/list_items"
+            android:id="@+id/license"/>
+        <CheckBoxPreference
+            android:title="CheckMe Color"
+            android:icon="@drawable/people"
+            android:id="@+id/fds"/>
+    </PreferenceCategory>
+</PreferenceScreen>

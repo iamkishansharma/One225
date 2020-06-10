@@ -12,6 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".unitFour.UnitFourActivity"></activity>
+        <activity android:name=".unitThree.UnitThreeActivity" />
+        <activity android:name=".unitTwo.UnitTwoActivity" />
+        <activity android:name=".unitOne.UnitOneActivity" />
+        <activity android:name=".MainActivity" />
+
         <receiver android:name=".MyAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -27,27 +33,28 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".unitOne.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Everything goes here -->
-        <activity android:name=".scrollview.ScrollViewActivity" />
-        <activity android:name=".RatingActivity" />
-        <activity android:name=".scrollview.HorizontalScrollView" />
-        <activity android:name=".ToolBarActivity" />
-        <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".alarm.AlarmManagerExample" />
+        </activity> <!-- Unit ONE -->
+        <activity android:name=".unitOne.ScrollViewActivity" />
+        <activity android:name=".unitOne.RatingActivity" />
+        <activity android:name=".unitOne.HorizontalScrollViewActivity" />
+        <activity android:name=".unitOne.ToolBarActivity" />
+        <activity android:name=".unitOne.ProgressBarActivity" /> <!-- Unit TWO -->
+        <activity android:name=".unitTwo.alarm.AlarmManagerExample" />
 
-        <receiver android:name=".alarm.AlarmManagerBroadcast" />
+        <receiver android:name=".unitTwo.alarm.AlarmManagerBroadcast" />
 
-        <activity android:name=".notification.NotificationExampleActivity" />
-        <activity android:name=".notification.NotificationViewEx" />
-        <activity android:name=".fragments.FragmentExample" />
-        <activity android:name=".DatePickerActivity" />
-        <activity android:name=".TimePickerActivity" />
+        <activity android:name=".unitTwo.notification.NotificationExampleActivity" />
+        <activity android:name=".unitTwo.notification.NotificationViewEx" /> <!-- Unit THREE -->
+        <activity android:name=".unitThree.fragments.FragmentExample" />
+        <activity android:name=".unitThree.DatePickerActivity" />
+        <activity android:name=".unitThree.TimePickerActivity" /> <!-- Unit FOUR -->
+        <activity android:name=".unitFour.CustomViewActivity" />
     </application>
 
 </manifest>

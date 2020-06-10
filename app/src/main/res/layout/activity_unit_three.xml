@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".unitThree.UnitThreeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/unit3"
+        android:id="@+id/unit3_toolbar"
+        android:background="@android:color/black"
+        android:elevation="10dp"
+        app:titleTextColor="@android:color/white"/>
+    <ScrollView
+        android:layout_below="@id/unit3_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/unit3_Btn1"
+                android:layout_margin="10dp"
+                android:onClick="callFragments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragments"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/btn"/>
+            <Button
+                android:id="@+id/unit3_Btn2"
+                android:layout_margin="10dp"
+                android:onClick="callDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/btn"
+                android:layout_below="@id/unit3_Btn1"/>
+            <Button
+                android:id="@+id/unit1_Btn3"
+                android:layout_margin="10dp"
+                android:onClick="callTimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_picker"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/btn"
+                android:layout_below="@id/unit3_Btn2"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

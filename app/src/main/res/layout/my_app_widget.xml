@@ -2,7 +2,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/btn"
-    android:padding="@dimen/widget_margin">
+    android:padding="@dimen/widget_margin"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/appwidget_text"
@@ -22,8 +23,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/logo_light"
-        android:layout_below="@id/appwidget_text"
+        android:layout_above="@id/appwidget_text"
         android:id="@+id/appwidget_image"
         android:contentDescription="@string/appwidget_text"/>
 
+    <Button
+        android:id="@+id/appwidget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:layout_below="@id/appwidget_text"/>
 </RelativeLayout>

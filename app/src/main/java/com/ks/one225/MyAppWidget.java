@@ -1,8 +1,12 @@
 package com.ks.one225;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.widget.Button;
 import android.widget.RemoteViews;
 
 /**
@@ -10,6 +14,8 @@ import android.widget.RemoteViews;
  * App Widget Configuration implemented in {@link MyAppWidgetConfigureActivity MyAppWidgetConfigureActivity}
  */
 public class MyAppWidget extends AppWidgetProvider {
+
+    private Button appWidgetBtn;
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -24,10 +30,20 @@ public class MyAppWidget extends AppWidgetProvider {
     }
 
     @Override
-    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+    public void onUpdate(final Context context, final AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
-        for (int appWidgetId : appWidgetIds) {
-            updateAppWidget(context, appWidgetManager, appWidgetId);
+        for (int currentWidgetId : appWidgetIds) {
+            //updateAppWidget(context, appWidgetManager, appWidgetId);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setData(Uri.parse("https://www.heycode.tech"));
+
+            PendingIntent pending = PendingIntent.getActivity(context, 0, intent, 0);
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setOnClickPendingIntent(R.id.appwidget_btn, pending);
+            appWidgetManager.updateAppWidget(currentWidgetId, views);
+
+
         }
     }
 
@@ -36,6 +52,7 @@ public class MyAppWidget extends AppWidgetProvider {
         // When the user deletes the widget, delete the preference associated with it.
         for (int appWidgetId : appWidgetIds) {
             MyAppWidgetConfigureActivity.deleteTitlePref(context, appWidgetId);
+
         }
     }
 

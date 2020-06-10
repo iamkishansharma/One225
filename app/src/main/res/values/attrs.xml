@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="KishanText">
+        <attr name="KishanSetColor" format="color"/>
+        <attr name="KishanAddText" format="string"/>
+        <attr name="KishanAddSize" format="dimension"/>
+    </declare-styleable>
+</resources>

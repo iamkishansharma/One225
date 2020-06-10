@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ks.one225.notification.NotificationViewEx"
+    tools:context="com.ks.one225.unitTwo.notification.NotificationViewEx"
     android:background="@drawable/btn"
     android:gravity="center">
     <TextView
