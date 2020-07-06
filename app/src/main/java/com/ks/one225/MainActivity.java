@@ -30,20 +30,20 @@ public class MainActivity extends AppCompatActivity {
     AdapterViewFlipper mAdapterViewFlipper;
     GridLayout mGridLayout;
     int [] IMAGES = {
-            R.drawable.logo_light,
-            R.drawable.logo_dark,
-            R.drawable.logo_light,
-            R.drawable.logo_dark,
-            R.drawable.logo_light,
+            R.drawable.pro0,
+            R.drawable.pro1,
+            R.drawable.pro2,
+            R.drawable.pro3,
+            R.drawable.pro4,
             R.drawable.logo_dark
     };
     String [] NAMES = {
-            "Paris",
-            "London",
-            "Dubai",
-            "Munich",
-            "New York",
-            "Miami"
+            "Sundar Pichai",
+            "Leonardo Dicaprio",
+            "Reagan Brogdon",
+            "Hrithik Roshan",
+            "Jonny Depp",
+            "HeyCode Inc"
     };
 
     @Override
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mAdapterViewFlipper = findViewById(R.id.adapterViewFlipper);
         CustomAdapter customAdapter = new CustomAdapter(MainActivity.this, IMAGES, NAMES);
         mAdapterViewFlipper.setAdapter(customAdapter);
-        mAdapterViewFlipper.setFlipInterval(1500);
+        mAdapterViewFlipper.setFlipInterval(2500);
         mAdapterViewFlipper.setAutoStart(true);
 
         mGridLayout = findViewById(R.id.mainGrid);
@@ -152,5 +152,4 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
-
 }

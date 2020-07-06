@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:title="@string/unit3"
         android:id="@+id/unit3_toolbar"
-        android:background="@android:color/black"
+        android:background="#651FFF"
         android:elevation="10dp"
         app:titleTextColor="@android:color/white"/>
     <ScrollView
