@@ -7,14 +7,14 @@
         android:id="@+id/ivs"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/btn"/>
+        android:src="@drawable/pro0"/>
     <TextView
         android:layout_toEndOf="@id/ivs"
         android:id="@+id/tvs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SMALL NOTIFICATION"
-        android:textSize="30dp"
+        android:text="@string/small_notification"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 
 

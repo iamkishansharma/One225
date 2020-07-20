@@ -20,6 +20,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.ks.one225.unitFive.UnitFiveActivity;
 import com.ks.one225.unitFour.UnitFourActivity;
 import com.ks.one225.unitOne.UnitOneActivity;
 import com.ks.one225.unitThree.UnitThreeActivity;
@@ -123,12 +124,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, UnitFourActivity.class));
     }
     public void unitFiveCall(View view) {
-        Toast.makeText(this, "Unit 5\nAdded Soon", Toast.LENGTH_SHORT).show();
-        //startActivity(new Intent(MainActivity.this, UnitOneActivity.class));
+        //Toast.makeText(this, "Unit 5\nAdded Soon", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MainActivity.this, UnitFiveActivity.class));
     }
     public void unitSixCall(View view) {
         Toast.makeText(this, "Unit 6\nAdded Soon", Toast.LENGTH_SHORT).show();
-        //startActivity(new Intent(MainActivity.this, UnitOneActivity.class));
     }
 
     @Override

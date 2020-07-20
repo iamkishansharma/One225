@@ -32,6 +32,16 @@
     <string name="time_picker">Time Picker</string>
     <string name="custom_view">Custom View</string>
     <string name="nothing">Nothing</string>
+    <string name="big_notification">Big NOTIFICATION</string>
+    <string name="small_notification">SMALL NOTIFICATION</string>
+    <string name="shared_preferences_ex">Shared Preferences Example</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="external_storage">External Storage</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_mobile_no">Your Mobile No.</string>
+    <string name="your_address">Your Address</string>
+    <string name="your_name">Your Name</string>
+    <string name="save">Save</string>
 
     <string-array name="list_items">
         <item>RED</item>

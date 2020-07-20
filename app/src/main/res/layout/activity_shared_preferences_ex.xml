@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:gravity="center"
+    tools:context=".unitFive.SharedPreferencesEx">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/shared_preferences_ex"
+            android:id="@+id/sp_toolbar"
+            android:background="#D81B60"
+            android:elevation="10dp"
+            app:titleTextColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edt_sp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_name"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edt_sp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_address"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/edt_sp1"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edt_sp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_mobile_no"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/edt_sp2"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/edt_sp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_email"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/edt_sp3"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_sp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_sp4"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg2"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

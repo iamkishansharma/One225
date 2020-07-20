@@ -5,44 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".unitFour.UnitFourActivity">
+    tools:context=".unitFive.UnitFiveActivity">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/unit4"
-        android:id="@+id/unit4_toolbar"
-        android:background="#3D5AFE"
+        app:title="@string/unit5"
+        android:id="@+id/unit5_toolbar"
+        android:background="#4CAF50"
         android:elevation="10dp"
         app:titleTextColor="@android:color/white"/>
     <ScrollView
-        android:layout_below="@id/unit4_toolbar"
+        android:layout_below="@id/unit5_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/unit4_Btn1"
+                android:id="@+id/unit5_Btn1"
                 android:layout_margin="10dp"
-                android:onClick="callCustomView"
+                android:onClick="callSharedPreference"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/custom_view"
+                android:text="@string/shared_preferences_ex"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:focusable="true"
                 android:clickable="true"
                 android:background="@drawable/btn"/>
             <Button
-                android:id="@+id/unit4_Btn2"
+                android:id="@+id/unit5_Btn2"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/nothing"
+                android:text="@string/internal_storage"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:focusable="true"
                 android:clickable="true"
                 android:background="@drawable/btn"
-                android:layout_below="@id/unit4_Btn1"/>
+                android:layout_below="@id/unit5_Btn1"/>
+
+            <Button
+                android:id="@+id/unit5_Btn3"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/external_storage"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/btn"
+                android:layout_below="@id/unit5_Btn2"/>
         </RelativeLayout>
     </ScrollView>
 

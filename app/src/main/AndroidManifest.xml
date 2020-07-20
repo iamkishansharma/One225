@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".unitFour.UnitFourActivity"></activity>
+        <activity android:name=".unitFive.UnitFiveActivity"></activity>
+        <activity android:name=".unitFive.SharedPreferencesEx" />
+        <activity android:name=".unitFour.UnitFourActivity" />
         <activity android:name=".unitThree.UnitThreeActivity" />
         <activity android:name=".unitTwo.UnitTwoActivity" />
         <activity android:name=".unitOne.UnitOneActivity" />

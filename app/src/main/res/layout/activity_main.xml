@@ -55,7 +55,7 @@
             android:layout_height="0dp"
             android:padding="14dp">
 
-            <!-- Column 1 -->
+            <!-- Unit 1 Navigation START -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/unit1"
                 app:cardBackgroundColor="#E91E63"
@@ -95,10 +95,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
+            <!-- Unit 1 Navigation END -->
 
-            <!-- Column 2 -->
+            <!-- Unit 2 Navigation START -->
             <androidx.cardview.widget.CardView
                 app:cardBackgroundColor="#F44336"
                 android:id="@+id/unit2"
@@ -141,7 +141,9 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+            <!-- Unit 2 Navigation END -->
 
+            <!-- Unit 3 Navigation START -->
             <androidx.cardview.widget.CardView
                 app:cardBackgroundColor="#651FFF"
                 android:id="@+id/unit3"
@@ -183,9 +185,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
+            <!-- Unit 3 Navigation END -->
 
+            <!-- Unit 4 Navigation START -->
             <androidx.cardview.widget.CardView
                 app:cardBackgroundColor="#3D5AFE"
                 android:id="@+id/unit4"
@@ -226,9 +229,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
+            <!-- Unit 4 Navigation END -->
 
+            <!-- Unit 5 Navigation START -->
             <androidx.cardview.widget.CardView
                 app:cardBackgroundColor="#4CAF50"
                 android:id="@+id/unit5"
@@ -269,10 +273,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
+            <!-- Unit 5 Navigation END -->
 
-
+            <!-- Unit 6 Navigation START -->
             <androidx.cardview.widget.CardView
                 app:cardBackgroundColor="#D500F9"
                 android:id="@+id/unit6"
@@ -313,9 +317,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
-
+            <!-- Unit 6 Navigation END -->
         </GridLayout>
 
     </LinearLayout>
