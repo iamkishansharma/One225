@@ -1,89 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
+    android:id="@+id/ll_sp"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".unitFive.SharedPreferencesEx">
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:title="@string/shared_preferences_ex"
-            android:id="@+id/sp_toolbar"
-            android:background="#D81B60"
-            android:elevation="10dp"
-            app:titleTextColor="@android:color/white" />
+        android:layout_height="wrap_content"
+        app:title="@string/shared_preferences_ex"
+        android:id="@+id/sp_toolbar"
+        android:background="#D81B60"
+        android:elevation="10dp"
+        app:titleTextColor="@android:color/white" />
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
+            android:id="@+id/edt_spi1"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_sp1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:hint="@string/your_name"
                 android:inputType="text"
-                android:textSize="20sp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorAccent"
                 android:textColorHint="@android:color/white"
-                android:textStyle="bold"
-                android:gravity="center"/>
-            <EditText
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_spi2"
+            android:layout_below="@id/edt_spi1">
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_sp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_address"
                 android:textSize="20sp"
                 android:inputType="text"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorAccent"
                 android:textColorHint="@android:color/white"
                 android:textStyle="bold"
-                android:layout_below="@id/edt_sp1"
                 android:gravity="center"/>
-            <EditText
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_spi3"
+            android:layout_below="@id/edt_spi2">
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_sp3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_mobile_no"
                 android:textSize="20sp"
                 android:inputType="number"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorAccent"
                 android:textColorHint="@android:color/white"
                 android:textStyle="bold"
-                android:layout_below="@id/edt_sp2"
                 android:gravity="center"/>
-            <EditText
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_spi4"
+            android:layout_below="@id/edt_spi3">
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_sp4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/your_email"
                 android:textSize="20sp"
                 android:inputType="textEmailAddress"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorAccent"
                 android:textColorHint="@android:color/white"
                 android:textStyle="bold"
-                android:layout_below="@id/edt_sp3"
                 android:gravity="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_background_color"
+            android:layout_below="@id/edt_spi4"
+            android:id="@+id/txt_sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
 
-            <Button
-                android:id="@+id/btn_sp1"
-                android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_sp"
+            android:orientation="horizontal"
+            android:id="@+id/rg">
+
+            <RadioButton
+                android:id="@+id/orange_sp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/edt_sp4"
-                android:layout_marginTop="7dp"
-                android:background="@drawable/bg2"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:text="@string/save"
-                android:textColor="@android:color/white"
-                android:textSize="25sp" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_weight="1"
+                android:text="@string/orange" />
 
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/black"
+                android:id="@+id/black_sp"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:id="@+id/red_sp"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:id="@+id/green_sp"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:id="@+id/blue_sp"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_sp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/save"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
 
-</ScrollView>
+</LinearLayout>
