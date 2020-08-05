@@ -7,16 +7,20 @@
     <application
         android:allowBackup="true"
         android:appCategory="productivity"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/xx"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/xx"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".unitSix.ViewPagerExActivity"></activity>
+        <activity
+            android:name=".unitSix.NavigationExActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".unitSix.UnitSixActivity" />
         <activity android:name=".unitFive.UnitFiveActivity" />
-        <activity android:name=".unitFive.SharedPreferencesEx"
-            android:windowSoftInputMode="adjustResize">
-
-        </activity>
+        <activity
+            android:name=".unitFive.SharedPreferencesEx"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".unitFour.UnitFourActivity" />
         <activity android:name=".unitThree.UnitThreeActivity" />
         <activity android:name=".unitTwo.UnitTwoActivity" />

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".unitOne.ProgressBarActivity"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <ProgressBar
         android:layout_width="match_parent"
@@ -32,9 +31,33 @@
             android:text="Start 2"/>
     </LinearLayout>
 
-    <ProgressBar
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressbar2"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressbar2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            tools:layout_editor_absoluteY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="false"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:progressDrawable="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="@id/progressbar2"
+            app:layout_constraintEnd_toEndOf="@id/progressbar2"
+            app:layout_constraintStart_toStartOf="@id/progressbar2"
+            app:layout_constraintTop_toTopOf="@id/progressbar2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -49,6 +49,9 @@
     <string name="green">Green</string>
     <string name="select_background_color">Select Background Color :</string>
     <string name="orange">Orange</string>
+    <string name="swipe_views_with_tabs">Swipe Views with Tabs</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="view_pager">View Pager</string>
 
     <string-array name="list_items">
         <item>RED</item>
@@ -57,4 +60,6 @@
         <item>YELLOW</item>
         <item>PURPLE</item>
     </string-array>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
 </resources>
