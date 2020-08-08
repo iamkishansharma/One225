@@ -19,5 +19,8 @@ public class UnitFiveActivity extends AppCompatActivity {
     public void callSharedPreference(View view) {
         startActivity(new Intent(UnitFiveActivity.this, SharedPreferencesEx.class));
     }
+    public void callInternalStorage(View view) {
+        startActivity(new Intent(UnitFiveActivity.this, InternalStorageEx.class));
+    }
 }
 

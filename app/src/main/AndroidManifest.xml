@@ -12,7 +12,8 @@
         android:roundIcon="@drawable/xx"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".unitSix.ViewPagerExActivity"></activity>
+        <activity android:name=".unitFive.InternalStorageEx"></activity>
+        <activity android:name=".unitSix.ViewPagerExActivity" />
         <activity
             android:name=".unitSix.NavigationExActivity"
             android:theme="@style/AppTheme.NoActionBar" />
