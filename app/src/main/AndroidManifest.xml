@@ -7,12 +7,12 @@
     <application
         android:allowBackup="true"
         android:appCategory="productivity"
-        android:icon="@drawable/xx"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/xx"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".unitFive.InternalStorageEx"></activity>
+        <activity android:name=".unitFive.InternalStorageEx" />
         <activity android:name=".unitSix.ViewPagerExActivity" />
         <activity
             android:name=".unitSix.NavigationExActivity"
